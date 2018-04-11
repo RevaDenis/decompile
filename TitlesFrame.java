@@ -7,6 +7,9 @@ import javax.swing.SwingUtilities;
 
 public class TitlesFrame
 extends JFrame {
+    /**
+     * Constructor of class TitlesFrame.
+     */
     public TitlesFrame() {
         this.initUI();
     }
@@ -19,6 +22,10 @@ extends JFrame {
         this.setLocationRelativeTo(null);
     }
 
+    /**
+     * Main method - entry point program.
+     * @param args - array of string parameters from command line.
+     */
     public static void main(String[] args) {
         SwingUtilities.invokeLater(new Runnable(){
 

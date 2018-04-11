@@ -19,6 +19,10 @@ public class ShapeFactory {
     public int width = 25;
     public int height = 25;
 
+    /**
+     * Constructor of class ShapeFactory.
+     * @param shape_type define type figure and color/border.
+     */
     public ShapeFactory(int shape_type) {
         switch (shape_type / 10) {
             case 1: {
@@ -77,6 +81,14 @@ public class ShapeFactory {
         }
     }
 
+    /**
+     * Method create star with different count of angle.
+     * @param arms - number angles.
+     * @param center - coordinat of center point.
+     * @param rOuter - outer radius. 
+     * @param rInner - inner radius.
+     * @return object which implements interface Shape.
+     */
     private static Shape createStar(int arms, Point center, double rOuter, double rInner) {
         double angle = 3.141592653589793 / (double)arms;
         GeneralPath path = new GeneralPath();
